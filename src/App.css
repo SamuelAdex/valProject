@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  color: rgb(226, 217, 217);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header{
+  color: #e76060;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid black;
+  border-top: 30px solid black;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heading{
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+.heading h1{
+  font-size: 30pt;
+  font-weight: bold; 
+  font-family: 'Ubuntu', sans-serif;
+}
+.lovers{
+  font-family: 'Supermercado One', cursive;
+  font-size: 50pt;
+  font-weight: 800;
+}
+
+.layout-container{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+    
+}
+.layout-container .e-card{
+  width: 750px;
+  height: 850px;
+  border-radius: 12px;
+  position: relative;  
+}
+
+
+.layout-container .upload-wrapper {  
+  background-color: #eeebee;  
+  position: relative;  
+  height: 15rem;
+  padding: 10px;
+  border-radius: 12px;
+}
+.layout-container .upload-wrapper .dotted-border{
+  padding: 20px;
+  height: 14rem;
+  color: black;
+  text-align:center;
+  background-color: #ddd7dd;
+  border: 3px dashed black;
+  /* border-style: ridge; */
+  border-radius: 12px;
+}
+
+.e-card .guest-image{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: 16.2rem;
+  right: 2.3rem;
+  border-radius: 50%;  
+  border: 8px solid #971a1a;
+}
+.e-card .guest-image img{
+  
+}
+
+.host{
+  padding: 40px;
+  background-color: #fff;
+}
+.host .title{
+  text-align: center;
+  font-size: 40pt;
+  font-family: 'Ubuntu', sans-serif;
+}
+.host-wrapper{
+  margin-top: 30px;
+  display:flex;
+  justify-content: center;  
+}
+.host-wrapper img{
+  width: 80%;
+  margin-bottom: 20px;;
+}
+.host-wrapper .about-host{
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+
+@media (max-width: 790px){
+  .lovers{
+    font-size: 20pt;
+    font-weight: bold;
+  }
+  .layout-container{
+    display: block;    
+  }
+  .layout-container .e-card{
+    width: 320px;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .e-card .guest-image{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 6.5rem;
+    right: 1rem;
+    border-radius: 50%;  
+    border: 5px solid #971a1a;
+  }
+
+  .host-wrapper{
+    flex-wrap: wrap;
+  }
+  .host-wrapper img{
+    width: 100%;
+  }
+  .host .title{
+    font-size: 25pt;
+  }
+}
