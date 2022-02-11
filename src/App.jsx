@@ -1,12 +1,7 @@
 import { useState, useEffect, createRef } from 'react';
 import { useScreenshot, createFileName } from 'use-react-screenshot';
-import logo from './logo.svg'
 import './App.css'
 import val_img from './img/time-out-1.png';
-import speaker1 from './img/1.jpg';
-import speaker2 from './img/2.jpg';
-import speaker3 from './img/3.jpg';
-import speaker4 from './img/4.jpg';
 
 function App() {
   const [img, setImg] = useState(""),
