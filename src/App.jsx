@@ -11,7 +11,7 @@ function App() {
 
   const [image, takeScreenShot] = useScreenshot({
     type: "image/jpeg" || "image/jpeg",
-    quality: 1.0
+    quality:1.0
   });
 
 
